@@ -1,0 +1,416 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2505E13B17D56FA300AE94AF /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E13A17D56FA300AE94AF /* Parse.framework */; };
+		2505E14417D5765700AE94AF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E13C17D5765700AE94AF /* AudioToolbox.framework */; };
+		2505E14517D5765700AE94AF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E13D17D5765700AE94AF /* CFNetwork.framework */; };
+		2505E14617D5765700AE94AF /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E13E17D5765700AE94AF /* libz.1.1.3.dylib */; };
+		2505E14717D5765700AE94AF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E13F17D5765700AE94AF /* MobileCoreServices.framework */; };
+		2505E14817D5765700AE94AF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E14017D5765700AE94AF /* QuartzCore.framework */; };
+		2505E14917D5765700AE94AF /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E14117D5765700AE94AF /* Security.framework */; };
+		2505E14A17D5765700AE94AF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E14217D5765700AE94AF /* StoreKit.framework */; };
+		2505E14B17D5765800AE94AF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2505E14317D5765700AE94AF /* SystemConfiguration.framework */; };
+		2505E14D17D57F8B00AE94AF /* TSQFriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2505E14C17D57F8B00AE94AF /* TSQFriendViewController.xib */; };
+		2505E15017D5835100AE94AF /* TSQUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 2505E14F17D5835100AE94AF /* TSQUtilities.m */; };
+		250E675517D10ADC00FF9378 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250E675417D10ADC00FF9378 /* UIKit.framework */; };
+		250E675717D10ADC00FF9378 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250E675617D10ADC00FF9378 /* Foundation.framework */; };
+		250E675917D10ADC00FF9378 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250E675817D10ADC00FF9378 /* CoreGraphics.framework */; };
+		250E675F17D10ADC00FF9378 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 250E675D17D10ADC00FF9378 /* InfoPlist.strings */; };
+		250E676117D10ADC00FF9378 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 250E676017D10ADC00FF9378 /* main.m */; };
+		250E676517D10ADC00FF9378 /* TSQAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 250E676417D10ADC00FF9378 /* TSQAppDelegate.m */; };
+		250E676717D10ADC00FF9378 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 250E676617D10ADC00FF9378 /* Default.png */; };
+		250E676917D10ADC00FF9378 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 250E676817D10ADC00FF9378 /* Default@2x.png */; };
+		250E676B17D10ADC00FF9378 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 250E676A17D10ADC00FF9378 /* Default-568h@2x.png */; };
+		250E676E17D10ADC00FF9378 /* TSQCheckinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250E676D17D10ADC00FF9378 /* TSQCheckinViewController.m */; };
+		250E677517D10ADC00FF9378 /* TSQFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250E677417D10ADC00FF9378 /* TSQFriendViewController.m */; };
+		250E677C17D10ADD00FF9378 /* TSQCheckinViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 250E677A17D10ADD00FF9378 /* TSQCheckinViewController.xib */; };
+		250E678C17D1155700FF9378 /* TSQLocationTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 250E678B17D1155700FF9378 /* TSQLocationTableViewController.m */; };
+		250E678F17D1166400FF9378 /* TSQLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 250E678E17D1166400FF9378 /* TSQLocation.m */; };
+		25978C0317D24CBD007D7551 /* TSQLocationTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25978C0217D24CBD007D7551 /* TSQLocationTableViewCell.m */; };
+		25BBBA4E17D273F60088CB7B /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 250E678517D10C8700FF9378 /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2505E13A17D56FA300AE94AF /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		2505E13C17D5765700AE94AF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2505E13D17D5765700AE94AF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		2505E13E17D5765700AE94AF /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		2505E13F17D5765700AE94AF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		2505E14017D5765700AE94AF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2505E14117D5765700AE94AF /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		2505E14217D5765700AE94AF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2505E14317D5765700AE94AF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2505E14C17D57F8B00AE94AF /* TSQFriendViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSQFriendViewController.xib; sourceTree = "<group>"; };
+		2505E14E17D5835100AE94AF /* TSQUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQUtilities.h; sourceTree = "<group>"; };
+		2505E14F17D5835100AE94AF /* TSQUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQUtilities.m; sourceTree = "<group>"; };
+		250E675117D10ADC00FF9378 /* TinySquare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinySquare.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		250E675417D10ADC00FF9378 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		250E675617D10ADC00FF9378 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		250E675817D10ADC00FF9378 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		250E675C17D10ADC00FF9378 /* TinySquare-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TinySquare-Info.plist"; sourceTree = "<group>"; };
+		250E675E17D10ADC00FF9378 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		250E676017D10ADC00FF9378 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		250E676217D10ADC00FF9378 /* TinySquare-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinySquare-Prefix.pch"; sourceTree = "<group>"; };
+		250E676317D10ADC00FF9378 /* TSQAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSQAppDelegate.h; sourceTree = "<group>"; };
+		250E676417D10ADC00FF9378 /* TSQAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSQAppDelegate.m; sourceTree = "<group>"; };
+		250E676617D10ADC00FF9378 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		250E676817D10ADC00FF9378 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		250E676A17D10ADC00FF9378 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		250E676C17D10ADC00FF9378 /* TSQCheckinViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSQCheckinViewController.h; sourceTree = "<group>"; };
+		250E676D17D10ADC00FF9378 /* TSQCheckinViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSQCheckinViewController.m; sourceTree = "<group>"; };
+		250E677317D10ADC00FF9378 /* TSQFriendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TSQFriendViewController.h; sourceTree = "<group>"; };
+		250E677417D10ADC00FF9378 /* TSQFriendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TSQFriendViewController.m; sourceTree = "<group>"; };
+		250E677B17D10ADD00FF9378 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/TSQCheckinViewController.xib; sourceTree = "<group>"; };
+		250E678517D10C8700FF9378 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		250E678A17D1155700FF9378 /* TSQLocationTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQLocationTableViewController.h; sourceTree = "<group>"; };
+		250E678B17D1155700FF9378 /* TSQLocationTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQLocationTableViewController.m; sourceTree = "<group>"; };
+		250E678D17D1166400FF9378 /* TSQLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQLocation.h; sourceTree = "<group>"; };
+		250E678E17D1166400FF9378 /* TSQLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQLocation.m; sourceTree = "<group>"; };
+		25978C0117D24CBD007D7551 /* TSQLocationTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TSQLocationTableViewCell.h; sourceTree = "<group>"; };
+		25978C0217D24CBD007D7551 /* TSQLocationTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TSQLocationTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		250E674E17D10ADC00FF9378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2505E14417D5765700AE94AF /* AudioToolbox.framework in Frameworks */,
+				2505E14517D5765700AE94AF /* CFNetwork.framework in Frameworks */,
+				2505E14617D5765700AE94AF /* libz.1.1.3.dylib in Frameworks */,
+				2505E14717D5765700AE94AF /* MobileCoreServices.framework in Frameworks */,
+				2505E14817D5765700AE94AF /* QuartzCore.framework in Frameworks */,
+				2505E14917D5765700AE94AF /* Security.framework in Frameworks */,
+				2505E14A17D5765700AE94AF /* StoreKit.framework in Frameworks */,
+				2505E14B17D5765800AE94AF /* SystemConfiguration.framework in Frameworks */,
+				25BBBA4E17D273F60088CB7B /* CoreLocation.framework in Frameworks */,
+				250E675517D10ADC00FF9378 /* UIKit.framework in Frameworks */,
+				250E675717D10ADC00FF9378 /* Foundation.framework in Frameworks */,
+				250E675917D10ADC00FF9378 /* CoreGraphics.framework in Frameworks */,
+				2505E13B17D56FA300AE94AF /* Parse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2505E15117D69AAC00AE94AF /* Implemented */ = {
+			isa = PBXGroup;
+			children = (
+				2505E14E17D5835100AE94AF /* TSQUtilities.h */,
+				2505E14F17D5835100AE94AF /* TSQUtilities.m */,
+				250E676317D10ADC00FF9378 /* TSQAppDelegate.h */,
+				250E676417D10ADC00FF9378 /* TSQAppDelegate.m */,
+				250E678D17D1166400FF9378 /* TSQLocation.h */,
+				250E678E17D1166400FF9378 /* TSQLocation.m */,
+				25978C0117D24CBD007D7551 /* TSQLocationTableViewCell.h */,
+				25978C0217D24CBD007D7551 /* TSQLocationTableViewCell.m */,
+				250E677317D10ADC00FF9378 /* TSQFriendViewController.h */,
+				250E677417D10ADC00FF9378 /* TSQFriendViewController.m */,
+				2505E14C17D57F8B00AE94AF /* TSQFriendViewController.xib */,
+			);
+			name = Implemented;
+			sourceTree = "<group>";
+		};
+		2505E15217D69ACA00AE94AF /* IMPLEMENT THESE */ = {
+			isa = PBXGroup;
+			children = (
+				250E678A17D1155700FF9378 /* TSQLocationTableViewController.h */,
+				250E678B17D1155700FF9378 /* TSQLocationTableViewController.m */,
+				250E676C17D10ADC00FF9378 /* TSQCheckinViewController.h */,
+				250E676D17D10ADC00FF9378 /* TSQCheckinViewController.m */,
+				250E677A17D10ADD00FF9378 /* TSQCheckinViewController.xib */,
+			);
+			name = "IMPLEMENT THESE";
+			sourceTree = "<group>";
+		};
+		250E674817D10ADC00FF9378 = {
+			isa = PBXGroup;
+			children = (
+				250E675A17D10ADC00FF9378 /* TinySquare */,
+				250E675317D10ADC00FF9378 /* Frameworks */,
+				250E675217D10ADC00FF9378 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		250E675217D10ADC00FF9378 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				250E675117D10ADC00FF9378 /* TinySquare.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		250E675317D10ADC00FF9378 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2505E13C17D5765700AE94AF /* AudioToolbox.framework */,
+				2505E13D17D5765700AE94AF /* CFNetwork.framework */,
+				2505E13E17D5765700AE94AF /* libz.1.1.3.dylib */,
+				2505E13F17D5765700AE94AF /* MobileCoreServices.framework */,
+				2505E14017D5765700AE94AF /* QuartzCore.framework */,
+				2505E14117D5765700AE94AF /* Security.framework */,
+				2505E14217D5765700AE94AF /* StoreKit.framework */,
+				2505E14317D5765700AE94AF /* SystemConfiguration.framework */,
+				2505E13A17D56FA300AE94AF /* Parse.framework */,
+				250E678517D10C8700FF9378 /* CoreLocation.framework */,
+				250E675417D10ADC00FF9378 /* UIKit.framework */,
+				250E675617D10ADC00FF9378 /* Foundation.framework */,
+				250E675817D10ADC00FF9378 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		250E675A17D10ADC00FF9378 /* TinySquare */ = {
+			isa = PBXGroup;
+			children = (
+				2505E15117D69AAC00AE94AF /* Implemented */,
+				2505E15217D69ACA00AE94AF /* IMPLEMENT THESE */,
+				250E675B17D10ADC00FF9378 /* Supporting Files */,
+			);
+			path = TinySquare;
+			sourceTree = "<group>";
+		};
+		250E675B17D10ADC00FF9378 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				250E675C17D10ADC00FF9378 /* TinySquare-Info.plist */,
+				250E675D17D10ADC00FF9378 /* InfoPlist.strings */,
+				250E676017D10ADC00FF9378 /* main.m */,
+				250E676217D10ADC00FF9378 /* TinySquare-Prefix.pch */,
+				250E676617D10ADC00FF9378 /* Default.png */,
+				250E676817D10ADC00FF9378 /* Default@2x.png */,
+				250E676A17D10ADC00FF9378 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		250E675017D10ADC00FF9378 /* TinySquare */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 250E678217D10ADD00FF9378 /* Build configuration list for PBXNativeTarget "TinySquare" */;
+			buildPhases = (
+				250E674D17D10ADC00FF9378 /* Sources */,
+				250E674E17D10ADC00FF9378 /* Frameworks */,
+				250E674F17D10ADC00FF9378 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinySquare;
+			productName = TinySquare;
+			productReference = 250E675117D10ADC00FF9378 /* TinySquare.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		250E674917D10ADC00FF9378 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TSQ;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = hedrick.tyler;
+				TargetAttributes = {
+					250E675017D10ADC00FF9378 = {
+						DevelopmentTeam = 2MCDBYUBVR;
+					};
+				};
+			};
+			buildConfigurationList = 250E674C17D10ADC00FF9378 /* Build configuration list for PBXProject "TinySquare" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 250E674817D10ADC00FF9378;
+			productRefGroup = 250E675217D10ADC00FF9378 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				250E675017D10ADC00FF9378 /* TinySquare */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		250E674F17D10ADC00FF9378 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250E675F17D10ADC00FF9378 /* InfoPlist.strings in Resources */,
+				250E676717D10ADC00FF9378 /* Default.png in Resources */,
+				250E676917D10ADC00FF9378 /* Default@2x.png in Resources */,
+				250E676B17D10ADC00FF9378 /* Default-568h@2x.png in Resources */,
+				250E677C17D10ADD00FF9378 /* TSQCheckinViewController.xib in Resources */,
+				2505E14D17D57F8B00AE94AF /* TSQFriendViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		250E674D17D10ADC00FF9378 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				250E676117D10ADC00FF9378 /* main.m in Sources */,
+				250E676517D10ADC00FF9378 /* TSQAppDelegate.m in Sources */,
+				250E676E17D10ADC00FF9378 /* TSQCheckinViewController.m in Sources */,
+				250E677517D10ADC00FF9378 /* TSQFriendViewController.m in Sources */,
+				250E678C17D1155700FF9378 /* TSQLocationTableViewController.m in Sources */,
+				250E678F17D1166400FF9378 /* TSQLocation.m in Sources */,
+				25978C0317D24CBD007D7551 /* TSQLocationTableViewCell.m in Sources */,
+				2505E15017D5835100AE94AF /* TSQUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		250E675D17D10ADC00FF9378 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250E675E17D10ADC00FF9378 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		250E677A17D10ADD00FF9378 /* TSQCheckinViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				250E677B17D10ADD00FF9378 /* en */,
+			);
+			name = TSQCheckinViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		250E678017D10ADD00FF9378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		250E678117D10ADD00FF9378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		250E678317D10ADD00FF9378 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinySquare/TinySquare-Prefix.pch";
+				INFOPLIST_FILE = "TinySquare/TinySquare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		250E678417D10ADD00FF9378 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TinySquare/TinySquare-Prefix.pch";
+				INFOPLIST_FILE = "TinySquare/TinySquare-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		250E674C17D10ADC00FF9378 /* Build configuration list for PBXProject "TinySquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250E678017D10ADD00FF9378 /* Debug */,
+				250E678117D10ADD00FF9378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		250E678217D10ADD00FF9378 /* Build configuration list for PBXNativeTarget "TinySquare" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				250E678317D10ADD00FF9378 /* Debug */,
+				250E678417D10ADD00FF9378 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 250E674917D10ADC00FF9378 /* Project object */;
+}
